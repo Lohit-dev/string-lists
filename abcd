@@ -1,0 +1,30 @@
+#Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
+
+#using loops
+string_input = input("type a word\n")
+list_string_input = list(string_input)
+x = len(string_input)
+new_input =[]
+
+while x > 0:
+    new_input += string_input[x - 1]
+    x -= 1
+
+if list_string_input == new_input :
+    print("This string is a palidrome")
+else:
+    print("no good bro")
+
+#using slicing strings
+
+string_incoming =input("Well, give me another word \n")
+reverse_string = string_incoming[::-1]
+
+if string_incoming ==  reverse_string:
+    print("You are a fucking hero")
+else:
+    print("Fail")
+
+
+
